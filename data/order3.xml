@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Chris Qualizza's custom burger order for order #3
+-->
+
+<!DOCTYPE order SYSTEM 'bonanza.dtd'>
+
+<order type="takeout">
+    <customer>Chris</customer>
+    <burger>
+        <patty type="beef"/>
+        <cheeses top="swiss" bottom="jack"/>
+        <topping type="bacon"/>
+        <topping type="lettuce"/>
+        <topping type="salsa"/>
+        <sauce type="fksauce"/>
+    </burger>
+</order>
