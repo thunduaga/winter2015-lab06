@@ -5,7 +5,7 @@ Order placement data for Barker Bob's burger Bar's Bigger, Better Burger Bonanza
 
 
 <!-- An order identifies the customer, order type, burgers, and anything special-->
-<!ELEMENT order (customer, delivery?, burgers+, special)>
+<!ELEMENT order (customer, delivery?, burgers+, special?)>
 
 <!-- A customer is identified simply by their name -->
 <!ELEMENT customer (#PCDATA)>
@@ -52,7 +52,7 @@ and one on bottom, and provide for unique codes for these -->
 >
 
 <!-- Sauces are similar to toppings -->
-<!ELEMENT sauce (#EMPTY)>
+<!ELEMENT sauce EMPTY>
 <!ATTLIST sauce
     type    (ketchup|mustard|mayo|fksauce) #REQUIRED
 >
