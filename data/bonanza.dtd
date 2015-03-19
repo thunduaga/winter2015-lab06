@@ -34,7 +34,8 @@ Burger customization...
 <!-- A patty can be one of five types (assume beef), and might be named explicitly -->
 <!ELEMENT patty (#PCDATA)>
 <!ATTLIST patty
-    type    (beef|pork|turkey|bison|vege) "beef">
+    type    (beef|pork|turkey|bison|vege) "beef"
+>
 
 <!-- The customer can order two cheeses. Let's assume that one might on top
 and one on bottom, and provide for unique codes for these -->
@@ -53,7 +54,8 @@ and one on bottom, and provide for unique codes for these -->
 <!-- Sauces are similar to toppings -->
 <!ELEMENT sauce (#EMPTY)>
 <!ATTLIST sauce
-    type    (ketchup|mustard|mayo|fksauce) #REQUIRED>
+    type    (ketchup|mustard|mayo|fksauce) #REQUIRED
+>
 
 <!-- Instructions can be literally anything-->
 <!ELEMENT instructions (#PCDATA)>
