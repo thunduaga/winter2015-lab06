@@ -29,7 +29,7 @@ Burger customization...
 -special instructions
 -an optional name, should the customer wish to propose this as a menu item
 -->
-<!ELEMENT burger (patty, cheeses, toppings, sauces, instructions?, name?)>
+<!ELEMENT burger (patty, cheeses?, toppings*, sauces*, instructions?, name?)>
 
 <!-- A patty can be one of five types (assume beef), and might be named explicitly -->
 <!ELEMENT patty (#PCDATA)>
@@ -60,5 +60,10 @@ and one on bottom, and provide for unique codes for these -->
 
 <!-- A name can be anything for now we'll validate it later -->
 <!ELEMENT name (#PCDATA)>
+
+
+
+
+
 
 
